@@ -1,0 +1,253 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+
+.main_container{
+    width: 100%;
+    min-height: 100vh;
+    background: #FF4500;
+}
+.reg_nav{
+    background: #FF4500;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav_item_left li img{
+    width: 59px;
+    height: 21px;
+}
+.nav_item_left{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.nav_item_left_signup{
+    padding-left: .9rem;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-decoration: none;
+}
+.nav_item_left_signup:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.nav_item_right{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.nav_item_right li img{
+    width: 32px;
+    height: 32px;
+}
+
+/*----------------------- SIGNUP FORM CODE START -------------------------------*/
+.parent_regform_container{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.regform_container{
+    background: hsla(0,0%,100%,.21);
+    border-radius: 35px;
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: 0 418px;
+    /* padding-top: 10rem; */
+}
+.reg_form_img{
+    position: absolute;
+    top: -4.6rem;
+    right: 0;
+    width: 6.88rem;
+    height: 6.26rem;
+    background: url(../images/login_3.ad7f785.png) no-repeat 50%;
+    width: 300px;
+    height: 300px;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.reg_form_title{
+    margin: 0;
+    padding: 4rem 0 4rem 4rem;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: .53rem;
+    font-weight: 700;
+    color: #271249;
+}
+.reg_form_box{
+    margin: auto;
+    padding: 0 26px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 4rem 5rem 4rem 4rem;;
+}
+
+/*----------- For round checkbox Start------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fb76a1;
+  border-color: #fb76a1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fb76a1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+/*----------- For round checkbox Start------------------*/
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*----------- For round checkbox End------------------*/
+.switch_sigup::after{
+    content: "Encrypted registration";
+    color: #fb76a1;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .94rem;
+}
+.form_bottom_text{
+    text-align: center;
+}
+.form_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_reg_signup{
+    font-size: 1.61rem;
+    line-height: 1.61rem;
+    font-weight: 700;
+    color: #7a6daa!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signup:hover{
+    text-decoration: none;
+}
+.login_reg{
+    width: 6.7rem;
+    height: 6.7rem;
+    background: url(../images/login_1.6006d53.png) no-repeat 50%;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+}
+.reg_form_box .form-group{
+    margin: 1.6rem 0;
+}
+.reg_form_box .form-group input{
+    height: 2.6rem;
+    width: 100%;
+    font-size: .9rem;
+    line-height: .87rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 0;
+    color: #3a3a3a;
+}
+.form-group input:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+/*----------------------- SIGNUP FORM CODE END -------------------------------*/
+
+
+/*----------------------- SIGNIN FORM CODE START -------------------------------*/
+.switch_sigin::after{
+    content: "Remember the password";
+    color: #000;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .94rem;
+}
+.login_reg_signin{
+    font-size: 1.61rem;
+    line-height: 1.61rem;
+    font-weight: 700;
+    color: #000000!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signin:hover{
+    text-decoration: none;
+}
+/*----------------------- SIGNIN FORM CODE End -------------------------------*/
+
+
+
+/*----------------------- MOBILE DEVICE CODE START ------------------*/
+@media (max-width: 1020px) {
+    .regform_container{
+        width: 100%;
+    }
+}
