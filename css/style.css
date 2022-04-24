@@ -15,6 +15,7 @@ li{list-style: none;}
     top: 0;
     left: 0;
     right: 0;
+    width: 100vw;
 }
 .nav_item_left li img{
     width: 59px;
@@ -631,5 +632,12 @@ input:checked + .slider:before {
 @media (max-width: 1020px) {
     .regform_container{
         width: 100%;
+    }
+
+    .dashboard_banner{
+        width: 95%;
+    }
+    .nav_logo{
+        padding-left: 0;
     }
 }
