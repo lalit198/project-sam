@@ -214,7 +214,7 @@ input:checked + .slider:before {
     border-radius: 0;
     color: #3a3a3a;
 }
-.form-group input:focus{
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{
     outline: none!important;
     box-shadow: none!important;
 }
@@ -627,6 +627,114 @@ input:checked + .slider:before {
 
 /*-------------------------- DASHBOARD CODE END--------------------- */
 
+/*------------------------ Deposit Code Starts -----------------------*/
+.recharge_container{
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: 0 418px;
+}
+.recharge_inner_container{
+    display: flex;
+    justify-content: space-between;
+}
+.recharge_amount_info{
+    position: relative;
+    width: 13.96rem;
+    height: 11.46rem;
+    padding: 3.688rem 1.26rem 2.669rem 1.26rem;
+    border-radius: 1.35rem;
+    background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(hsla(0,0%,100%,.5)));
+    background: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5));
+}
+.recharge_title{
+    font-size: 1.17rem;
+    color: #343a40;
+    font-weight: 400;
+    text-align: left;
+}
+.recharge_amount_info:first-child:before {
+    background-image: url('../images/amount_0.d0c490a.png');
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.56rem;
+    height: 4.562rem;
+    background-size: 4.52rem 4.52rem;
+}
+.recharge_amount_info::before {
+    background: url('../images/amount_1.9dbd6c0.png');
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.56rem;
+    height: 4.562rem;
+    background-size: 4.52rem 4.52rem;
+}
+.recharge_amount_info i{
+    font-size: 2rem;
+    color: #f76997;
+}
+.recharge_para p{
+    font-size: 1rem;
+    font-weight: 200!important;
+    line-height: 1.26rem;
+    color: #FFF;
+}
+
+/*------------------------ Deposit Code End -----------------------*/
+
+/*------------------------ Withdrawal Code Start -----------------------*/
+
+.parent_withdrawal_container{
+    padding-top: 5rem;
+    /* padding-bottom: 9rem; */
+}
+.withdrawal_form_box{
+    margin: auto;
+    padding: 0 26px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 1rem 5rem 4rem 4rem;;
+}
+.withdrawal_form_box .withdrawal_form_box_inner{
+    width: 40%;
+    margin: auto;
+}
+.withdrawal_form_head p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #6c757d;
+}
+.withdrawal_amt p{
+    font-size: 50px;
+    padding: 1rem 3.500rem;
+    text-align: center;
+    background-color: #e9ecef;
+}
+.withdrawal_form_box input, .withdrawal_form_box select{
+    border-radius: 4px;
+}
+.withdrawal_form_box textarea{
+    border-radius: 18px;
+}
+.withdrawal_form_box .btn{
+    border-radius: 24px;
+}
+
+
+/*------------------------ Withdrawal Code End -----------------------*/
+
 
 
 /*----------------------- MOBILE DEVICE CODE START ------------------*/
@@ -638,5 +746,48 @@ input:checked + .slider:before {
     .dashboard_banner{
         width: 95%;
     }
+    .wallet_promotion_wrap {
+        display: block;
+    }
+    .amount_info {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .amount_balance {
+        max-width: 30.38rem;
+    }
+    .amount_title {
+        text-align: center;
+    }
+    .amount_info img {
+        margin: 2.02rem 7.684rem 1.68rem 7.684rem;
+    }
+    .amount_account {
+        text-align: center;
+    }
+
+
+    /*------------------------ Deposit Code Starts -----------------------*/
+.recharge_container{
+
+    width: 95%;
+}
+.recharge_inner_container{
+    display: block;
+}
+.recharge_amount_info{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+}
+.recharge_amount_info:last-child {
+    margin-top: 5rem;
+}
+
+
+/*------------------------ Deposit Code End -----------------------*/
 
 }
