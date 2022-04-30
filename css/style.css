@@ -887,6 +887,7 @@ background-color: #40afff;
 
 /*------------------------ Deposit Code End -----------------------*/
 
+/*------------------------ Withdrawal Code Start -----------------------*/
 .withdrawal_form_box {
     padding: 1rem 1rem 4rem 1rem;
 }
@@ -894,4 +895,14 @@ background-color: #40afff;
 .withdrawal_form_box .withdrawal_form_box_inner {
     width: 100%;
 }
+/*------------------------ Withdrawal Code End -----------------------*/
+
+/*------------------------ Investing Code start -----------------------*/
+.investlisting_box_parent{
+    display: block;
+}
+.investing_wrap_inner_content {
+    margin-top: 1.5rem;
+}
+/*------------------------ Investing Code end -----------------------*/
 }
