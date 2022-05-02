@@ -834,6 +834,134 @@ background-color: #40afff;
 }
 /*------------------------ Invespro End -----------------------*/
 
+/*------------------------------ Trade Start------------------------- */
+.trade_profit_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;    
+    box-shadow: 0 1px 14px 0 rgb(184 175 174 / 36%);
+    padding: 1rem;
+    background: #fb76a1;
+    margin-bottom: 2rem;
+}
+.trade_img{
+    width: 68px;
+    height: 63px;
+}
+.total_unit{
+    font-size: 13px;
+    font-weight: 400;
+    color: #60458c;
+}
+/* .trade_profit_btn{
+    color: white;
+    border-radius: 5px;
+} */
+/*------------------------------ Trade End------------------------- */
+
+/*------------------------------ Share Start------------------------- */
+.share_img{
+    display: flex;
+    justify-content: center;
+}
+.share_img img{
+    width: 211.188px;
+    height: 199.672px;
+}
+.share_text h3{
+    font-size: 21.6px;
+    line-height: 21.6px;
+    font-weight: 700;
+    color: #271249;
+    text-align: center;
+}
+.share_text p{
+    text-align: center;
+    font-weight: 400;
+    color: #7a6daa;
+}
+.share_form_group input{
+    color: #fff!important;
+    background-color: #fb76a1;
+    border-radius: 28.32px!important;
+    
+}
+.share_form_group input:focus{
+    background-color: #fb76a1;
+    
+}
+.share_form_group button{
+    font-size: 12.48px;
+    color: #fb76a1;
+    background: #fff;
+    position: absolute;
+    right: 2%;
+    border-radius: 24px!important;
+}
+.qr_text h3{
+    text-align: center;
+    color: #FFF;
+    font-size: 34.56px;
+    font-weight: 700;
+    line-height: 34.56px;
+}
+.qr_text p{
+    text-align: center;
+    color: #FFF;
+    font-size: 16.32px;
+    font-weight: 400;
+    line-height: 16.32px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.qr_img{
+    background-color: #FFF;
+    padding: .8rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+/*------------------------------ Share End------------------------- */
+
+.parent_team_container{
+    padding-top: 5rem;
+    padding-bottom: 9;
+}
+.team_level_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+}
+.team_level_container button{
+    background-color: #3bd1d6;
+    border: 1px solid #3bd1d6;
+    padding: .3rem 3.1rem!important;
+}
+.team_level_container button:hover{
+    background-color: #3bd1d6;
+    border: 1px solid #3bd1d6;
+}
+.team_pagination{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .9rem;
+    background-color: #FFF;
+    border-bottom: 2px solid grey;
+}
+.team_pagination_down{
+    display: flex;
+    justify-content: end;
+    background-color: #FFF;
+    padding: 0 .9rem;
+    padding-bottom: 1rem;
+}
+.team_pagination_down span{
+    font-size: 12px;
+}
+
+
 /*----------------------- MOBILE DEVICE CODE START ------------------*/
 @media (max-width: 1020px) {
     .regform_container{
@@ -905,4 +1033,14 @@ background-color: #40afff;
     margin-top: 1.5rem;
 }
 /*------------------------ Investing Code end -----------------------*/
+
+/*------------------------ Share Code Start -----------------------*/
+.qr_img{
+    width: 40%;
+}
+/*------------------------ Share Code End -----------------------*/
+
+.team_form_box{
+    padding: 0!important;
+}
 }
