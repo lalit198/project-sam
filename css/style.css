@@ -4,10 +4,10 @@ li{list-style: none;}
 .main_container{
     width: 100%;
     min-height: 100vh;
-    background: #FF4500;
+    background: #080b0e;
 }
 .reg_nav{
-    background: #FF4500;
+    background: #080b0e;
     display: flex;
     justify-content: space-between;
     /* padding: .5rem 1rem; */
@@ -16,6 +16,7 @@ li{list-style: none;}
     left: 0;
     right: 0;
     width: 100vw;
+    padding-top: 2rem;
 }
 .nav_item_left li img{
     width: 59px;
@@ -46,17 +47,21 @@ li{list-style: none;}
     padding-right: 2rem;
 }
 .nav_item_right li img{
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
 }
 .nav_logo li img{
     width: 125px;
 }
 
 /*----------------------- SIGNUP FORM CODE START -------------------------------*/
+.signup_bg_img{
+    background: url('../images/neon2.b364b980.jpg');
+    background-size: 100% 100%;
+}
 .parent_regform_container{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
 }
 .regform_container{
     background: hsla(0,0%,100%,.21);
@@ -67,6 +72,9 @@ li{list-style: none;}
     width: 40%;
     margin: 0 418px;
     /* padding-top: 10rem; */
+}
+.mine_regform_container{
+    background: #010316;
 }
 .reg_form_img{
     position: absolute;
@@ -82,95 +90,24 @@ li{list-style: none;}
 }
 .reg_form_title{
     margin: 0;
-    padding: 4rem 0 4rem 4rem;
+    padding: 2rem 0;
     text-align: left;
     font-size: 1.6rem;
     line-height: .53rem;
     font-weight: 700;
-    color: #271249;
+    text-align: center;
+    border-radius: 40px;
+    color: #FFF;
 }
 .reg_form_box{
     margin: auto;
     padding: 0 26px;
-    background-color: #fff;
+    background-color: #080b0e;
     border-radius: 24px;
-    padding: 4rem 5rem 4rem 4rem;;
+    padding: 0 1.5rem 0 1.5rem;;
 }
 
-/*----------- For round checkbox Start------------------*/
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 52px;
-  height: 28px;
-}
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #fb76a1;
-  border-color: #fb76a1;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #fb76a1;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-/*----------- For round checkbox Start------------------*/
-
-.slider.round:before {
-  border-radius: 50%;
-}
-/*----------- For round checkbox End------------------*/
-.switch_sigup::after{
-    content: "Encrypted registration";
-    color: #fb76a1;
-    position: absolute;
-    left: 4rem;
-    clear: both;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: .94rem;
-}
 .form_bottom_text{
     text-align: center;
 }
@@ -201,22 +138,35 @@ input:checked + .slider:before {
     outline: none;
 }
 .reg_form_box .form-group{
-    margin: 1.6rem 0;
+    margin: 1.1rem 0;
+}
+.reg_form_box label{
+    font-size: 15px;
+    color: #FFF;
+    text-transform: uppercase;
 }
 .reg_form_box .form-group input{
-    height: 2.6rem;
+    height: 4rem;
     width: 100%;
     font-size: .9rem;
     line-height: .87rem;
     outline: none;
     border: none;
-    border-bottom: 1px solid #d8d8d8;
+    /* border-bottom: 1px solid #d8d8d8; */
+    background-color: #242b35;
     border-radius: 0;
     color: #3a3a3a;
+    border-radius: 22px;
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus{
     outline: none!important;
     box-shadow: none!important;
+}
+
+.btn_cred a{
+    border-radius: 24px;
+    font-size: 1.3rem;
+    width: 70%;
 }
 /*----------------------- SIGNUP FORM CODE END -------------------------------*/
 
@@ -264,14 +214,12 @@ input:checked + .slider:before {
     margin: auto;
 }
 .dashboard_banner_content{
-    position: absolute;
+    text-align: center;
     padding: 0.2rem 0.57rem;
-    top: 0;
-    left: 0;
 
 }
 .dashboard_banner_content .total_title{
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     line-height: 1.1rem;
     color: #FFF;
 }
@@ -280,15 +228,14 @@ input:checked + .slider:before {
     font-size: 2.5625rem;
     line-height: 2.5625rem;
     font-weight: 700;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 1.5rem;
-    color: #FFF;
+    color: #39FF14;
 }
 
 .dashboard_banner_content .total_unit{
-    position: absolute;
-    top: 0;
-    left: 100%;
     font-size: .96rem;
     line-height: 1.2rem;
     padding-left: .325rem;
@@ -296,30 +243,37 @@ input:checked + .slider:before {
     font-family: Helvetica;
     color: #FFF;
 }
+.header_down_parent{
+    border-radius: 1.35rem;
+    background: hsla(0,0%,100%,.21);
+    margin-bottom: 1.8125rem;
+}
 .header_down{
     display: flex;
     align-items: center;
-    border-radius: 1.35rem;
-    background: hsla(0,0%,100%,.21);
-    height:5.3125rem;
-    margin-bottom: 1.8125rem;
+    padding: 0.8rem 0.5rem;
 }
 .header_down img{
     width: 3.419925rem;
     margin: 0 .6875rem 0 1.1875rem;
 }
 .header_down_content{
-    font-size: 13px;
+    font-size: 18px;
     line-height: 13px;
     font-weight: 700;
-    color: #60458c;
+    color: #FFF;
+}
+.header_down_content p{
+    color: #39FF14;
+    margin-top: .5rem;
 }
 
 .dash_menu_main{
     border-radius: 2.1rem;
-    background: #FFF;
+    background: transparent;
     position: relative;
     padding: 2rem .2rem;
+    padding-bottom: 0;
 }
 .dash_menu_img img{
     width: 20%;
@@ -330,24 +284,30 @@ input:checked + .slider:before {
 
 .dash_menu{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
     grid-row-gap: 2rem;
 
 }
+.menu_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .menu_item_icon img{
-    width: 4.712125rem;
-    height: 4.712125rem;
+    width: 3.712125rem;
+    height: 3.712125rem;
     border-radius: 2.37rem;
-    margin: 0 2.8125rem .66rem 2.8125rem;
 }
 .menu_item_text{
     font-size: .825rem;
     line-height: .825rem;
     font-weight: 400;
-    color: #2a2a2a;
+    color: #FFF;
     text-align: center;
+    margin-top: .5rem;
 }
 
 
@@ -361,14 +321,22 @@ input:checked + .slider:before {
 }
 .amount_info{
     padding: 1.5rem 1.26rem 2.64rem 1.26rem;
-    height: 16.226rem;
-    background-color: #FFF;
+    /* height: 16.226rem; */
+    background-color: #242b35;
+    border-radius: 15px;
+    box-shadow: 0 0.53333rem 0.8rem #000;
+    display: flex;
     border-radius: 1.35rem;
     /* background: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5)); */
     position: relative;
     width: 12.96;
     height: 16.23rem;
 }
+/* .rnd_img{
+    background: url('../images/rectangle@2x.5fa7f401.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
 .amount_info img{
     display: block;
     width: 4.949rem;
@@ -414,7 +382,7 @@ input:checked + .slider:before {
     overflow: hidden;
     padding-bottom: 6rem;
     border-radius: 2.1rem;
-    background-color: #fff;
+    background-color: #242b35;
 }
 .top_line_container{
     margin-bottom: 1.8rem;
@@ -430,9 +398,9 @@ input:checked + .slider:before {
     margin-top: 1.2rem;
 }
 .join_section_title{
-    font-size: 1.83rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    color: #282828;
+    color: #39FF14;
     line-height: 1.83rem;
     text-align: center;
 }
@@ -457,21 +425,20 @@ input:checked + .slider:before {
     border-bottom: 0;
 }
 .login_btn{
-    background: linear-gradient(180deg,#ff87ad,#f3598b);
-    box-shadow: 0 6px 15px 0 #f76997;
-    border-radius: 10px;
+
+    border-radius: 15px;
     font-size: 1.29rem;
     color: #fff;
     border: none;
     outline: none;
-    height: 3.212rem;
+    height: 3.5rem;
     line-height: 3.212rem;
 }
 
 .member_warp{
     position: relative;
     width: auto;
-    background-color: #FF4500;
+    /* background-color: #242b35; */
     margin: 6.63rem auto 0;
     border-radius: 1.5rem;
     padding: 2.125rem 1.35rem;
@@ -537,9 +504,9 @@ input:checked + .slider:before {
     width: 6rem;
 }
 .about_inner_head{
-    margin-top: 6.75rem;
+    margin-top: .75rem;
     font-size: 2.16rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     text-align: center;
 }
@@ -550,7 +517,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 .about_inner_content{
-    margin: 4.5rem 3.102rem 1.26rem 3.102rem;
+    margin: .5rem 3.102rem 1.26rem 3.102rem;
     text-align: center;
     font-weight: 300;
     color: #fff;
@@ -568,20 +535,17 @@ input:checked + .slider:before {
 }
 .global_partners{
     padding-top: 1rem;
-    background: hsla(0,0%,100%,.21);
-    border-radius: 24px;
 }
 .global_partners_titles{
     padding-bottom: .78rem;
     margin-bottom: .63rem;
     text-align: center;
-    font-size: 1.26rem;
-    font-weight: 700;
+    font-size: 2.16rem;
+    font-weight: 500;
     line-height: 1.26rem;
-    color: #280d5f;
+    color: #FFF;
 }
 .global_partners_inner{
-    background-color: #FFF;
     border-radius: 24px;
     padding: 1.74rem 0;
     margin-top: 1.5rem;
@@ -592,23 +556,26 @@ input:checked + .slider:before {
 }
 .global_partners_imgbox{
     text-align: center;
+    background: #FFF;
+    border-radius: 10px;
 }
 
 
 .dashboard_footer{
     margin: 0;
-    width: 100%;
-    height: 52px;
-    border-radius: 16px 16px 0 0;
+    width: 75%;
+    height: 62px;
+    border-radius: 16px;
     background: #FFF;
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 5%;
     z-index: 9;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin:auto;
 
 }
 .dashboard_footer a img{
@@ -643,52 +610,37 @@ input:checked + .slider:before {
     position: relative;
     width: 13.96rem;
     height: 11.46rem;
-    padding: 3.688rem 1.26rem 2.669rem 1.26rem;
+    padding: 1.688rem 1.26rem 1.669rem 1.26rem;
     border-radius: 1.35rem;
     background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(hsla(0,0%,100%,.5)));
     background: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5));
 }
 .recharge_title{
-    font-size: 1.17rem;
-    color: #343a40;
-    font-weight: 400;
-    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
 }
-.recharge_amount_info:first-child:before {
-    background-image: url('../images/amount_0.d0c490a.png');
+.recharge_amount_info:first-child {
+    background-image: url('../images/rectangle-3@2x.4bacb58b.png');
     background-repeat: no-repeat;
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4.56rem;
-    height: 4.562rem;
-    background-size: 4.52rem 4.52rem;
+    background-size: 100% 100%;
 }
-.recharge_amount_info::before {
-    background: url('../images/amount_1.9dbd6c0.png');
+.recharge_amount_info {
+    background: url('../images/rectangle-2@2x.3749fdc1.png');
     background-repeat: no-repeat;
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4.56rem;
-    height: 4.562rem;
-    background-size: 4.52rem 4.52rem;
+    background-size: 100% 100%;
 }
 .recharge_amount_info i{
     font-size: 2rem;
     color: #f76997;
 }
 .recharge_para p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 200!important;
     line-height: 1.26rem;
-    color: #FFF;
+    color: rgb(142, 142, 147);
+    margin-bottom: 3rem;
 }
 
 /*------------------------ Deposit Code End -----------------------*/
@@ -702,9 +654,10 @@ input:checked + .slider:before {
 .withdrawal_form_box{
     margin: auto;
     padding: 0 26px;
-    background-color: #fff;
+    background-color: #242b35;
+    box-shadow: 0 0.53333rem 0.8rem #000;
     border-radius: 24px;
-    padding: 1rem 5rem 4rem 4rem;;
+    padding: 1rem 5rem 4rem 4rem;
 }
 .withdrawal_form_box .withdrawal_form_box_inner{
     width: 40%;
@@ -717,10 +670,28 @@ input:checked + .slider:before {
     color: #6c757d;
 }
 .withdrawal_amt p{
-    font-size: 50px;
-    padding: 1rem 3.500rem;
+    font-size: 18px;
+    font-weight: 600;
+    padding: .5rem 2rem;
     text-align: center;
-    background-color: #e9ecef;
+    background-color: #242b35;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.withdrawal_form_box_inner .form-group select, .withdrawal_form_box_inner .form-group input{
+    height: 4rem;
+    width: 100%;
+    font-size: .9rem;
+    line-height: .87rem;
+    outline: none;
+    border: 2px solid #FFF;
+    background-color: #242b35;
+    border-radius: 0;
+    color: rgb(142, 142, 147);
+    border-radius: 22px;
 }
 .withdrawal_form_box input, .withdrawal_form_box select{
     border-radius: 4px;
@@ -780,6 +751,7 @@ input:checked + .slider:before {
     width: 100%;
     border-radius: 8.64px;
     padding: 1rem;
+    background-color: #242b35;
 }
 .investing_wrap_inner_content p{
     margin-left: 0;
@@ -804,12 +776,12 @@ input:checked + .slider:before {
     width: 93%
 }
 .investpro_top_box{
-background-color: #40afff;
-    background-image: linear-gradient(45deg,#40afff,#3574fa);
+background-color: #242b35;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 15px;
     margin-bottom: 15px;
+    border: 2px solid #FFF;
 }
 .investpro_top_box_img{
     background: url('../images/invest_user.84c0979.png') no-repeat 100% 100%;
@@ -818,8 +790,8 @@ background-color: #40afff;
 }
 .investpro_box{
     padding: .7rem 1.1rem;
-    background-color: #FFF;
-    border-radius: 5px;
+    background-color: #242b35;
+    border-radius: 15px;
 }
 .investpro_box_item{
     display: flex;
@@ -827,7 +799,8 @@ background-color: #40afff;
 }
 .investpro_box_item p{
     margin-bottom: .8rem;
-    font-size: .9rem;
+    text-align: center;
+    color: #FFF;
 }
 .investpro_box_item .form-group{
     width: 100%;
@@ -836,18 +809,15 @@ background-color: #40afff;
 
 /*------------------------------ Trade Start------------------------- */
 .trade_profit_item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;    
-    box-shadow: 0 1px 14px 0 rgb(184 175 174 / 36%);
-    padding: 1rem;
-    background: #fb76a1;
     margin-bottom: 2rem;
+    padding-top: 2rem;
 }
 .trade_img{
-    width: 68px;
-    height: 63px;
+    width: 45px;
+    height: 42px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #39FF14;
 }
 .total_unit{
     font-size: 13px;
@@ -901,9 +871,9 @@ background-color: #40afff;
 }
 .qr_text h3{
     text-align: center;
-    color: #FFF;
-    font-size: 34.56px;
-    font-weight: 700;
+    color: #FF9E3D;
+    font-size: 32.56px;
+    font-weight: 500;
     line-height: 34.56px;
 }
 .qr_text p{
@@ -914,14 +884,28 @@ background-color: #40afff;
     line-height: 16.32px;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding: 0 3rem;
 }
 .qr_img{
-    background-color: #FFF;
+    background-color: #E8E8E8;
+    border-radius: 10px;
     padding: .8rem;
-    width: 10%;
+    width: 60%;
     display: flex;
     justify-content: center;
     margin:auto;
+}
+.qr_avg_rwd{
+    display: flex;
+    align-items: center;
+}
+.first_qr_avg_rwd{
+    color: #FFF;
+}
+.sec_qr_avg_rwd{
+    color: #39FF14;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 /*------------------------------ Share End------------------------- */
 
@@ -932,12 +916,11 @@ background-color: #40afff;
 .team_level_container{
     display: flex;
     justify-content: space-around;
-    background-color: #FFF;
 }
 .team_level_container button{
     background-color: #3bd1d6;
     border: 1px solid #3bd1d6;
-    padding: .3rem 3.1rem!important;
+    padding: 1rem 2.6rem!important;
 }
 .team_level_container button:hover{
     background-color: #3bd1d6;
@@ -971,11 +954,8 @@ background-color: #40afff;
     .dashboard_banner{
         width: 95%;
     }
-    .wallet_promotion_wrap {
-        display: block;
-    }
     .amount_info {
-        width: 100%;
+        width: 48%;
         height: auto;
         margin-top: 1rem;
         text-align: center;
@@ -985,6 +965,8 @@ background-color: #40afff;
     }
     .amount_title {
         text-align: center;
+        color:rgb(142, 142, 147);
+        font-size: 1rem;
     }
     .amount_info img {
         margin: 2.02rem 7.684rem 1.68rem 7.684rem;
@@ -999,25 +981,22 @@ background-color: #40afff;
 
     width: 95%;
 }
-.recharge_inner_container{
-    display: block;
-}
+
 .recharge_amount_info{
     width: 100%;
     height: auto;
     margin-top: 1rem;
 
 }
-.recharge_amount_info:last-child {
-    margin-top: 5rem;
-}
+
 
 
 /*------------------------ Deposit Code End -----------------------*/
 
 /*------------------------ Withdrawal Code Start -----------------------*/
-.withdrawal_form_box {
-    padding: 1rem 1rem 4rem 1rem;
+.withdrawal_form_box,.withdrawal_form_head {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 .withdrawal_form_box .withdrawal_form_box_inner {
@@ -1028,19 +1007,67 @@ background-color: #40afff;
 /*------------------------ Investing Code start -----------------------*/
 .investlisting_box_parent{
     display: block;
+    padding: 0;
 }
 .investing_wrap_inner_content {
     margin-top: 1.5rem;
 }
+.btn_invistinglist a{
+    border-radius: 24px;
+    font-size: .9rem;
+    width: 36%;
+    background: linear-gradient(37deg,#68dfad 60%,#c0ea59);
+}
+.investlisting_box_parent .subscription_history{
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+}
+.investlisting_box_parent .subscription_history:hover{
+    color: #FFF;
+    text-decoration: none;
+}
 /*------------------------ Investing Code end -----------------------*/
 
 /*------------------------ Share Code Start -----------------------*/
-.qr_img{
-    width: 40%;
+.qr_img_parent{
+    width: 90%;
+    background-color: #242b35;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+.qr_img span{
+    background-color: #e8e8e8;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.qr_img p{
+    color: #FFF;
+    display: block;
 }
 /*------------------------ Share Code End -----------------------*/
 
 .team_form_box{
     padding: 0!important;
+}
+.team_level_container .card1{
+    background-color: #fff4e9;
+    font-size: 22px;
+    border-radius: 15px;
+    width: 85%;
+}
+.team_level_container .card2{
+    background-color: #f5eeff;
+    font-size: 22px;
+    border-radius: 15px;
+    width: 85%;
+}
+.team_level_container .card3{
+    background-color: #e1f6fa;
+    font-size: 22px;
+    border-radius: 15px;
+    width: 85%;
 }
 }
